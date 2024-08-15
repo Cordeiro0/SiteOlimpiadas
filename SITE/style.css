@@ -1,54 +1,134 @@
-   
-      .navbar {
-        background-color: rgba(0, 0, 0, 0.7) !important; 
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-        padding-left: 50px ;
-        padding-right: 50px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 20px;
-        transition: 0.8s;
-      }
+/*INICIO HOME*/
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7) !important; 
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding-left: 50px ;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  transition: 0.8s;
+}
   
-      .navbar .nav-item {
-        margin-right: 10px; 
-      }
+.navbar .nav-item {
+  margin-right: 10px; 
+}
           
-      .navbar:hover {
-        transition: 0.8s;
-        background-color: #000000 !important; 
-      }
-      .navbar .nav-link {
-        color: #fff; 
-      }
-      .navbar .nav-link:hover {
-        color: #fff; 
-      }
+.navbar:hover {
+  transition: 0.8s;
+  background-color: #000000 !important; 
+}
+
+.navbar .nav-link {
+  color: #fff; 
+}
+
+.navbar .nav-link:hover {
+  color: #fff; 
+}
       
-      .texto-carr h1 {
-        font-size: 32px; 
-        font-family: 'Roboto', sans-serif; 
-        font-weight: bold; 
-        color: #ffffff;
-      }
+.texto-carr h1 {
+  font-size: 32px; 
+  font-family: 'Roboto', sans-serif; 
+  font-weight: bold; 
+  color: #ffffff;
+}
      
-    .texto-carr {
-    font-family:  "Paris 2024", "Olympic Headline", Helvetica, sans-serif;
-    
-    font-weight: bold;
-    font-style: normal;
-    font-size: 30px;
-  }
+.texto-carr {
+  font-family:  "Paris 2024", "Olympic Headline", Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
   
-  h1 {
+h1 {  
+  font-size: 85px;
+  font-weight: bold;
+}
   
-    font-size: 85px;
-    font-weight: bold;
-  }
+h2 {
+  font-size: 47px;
+  font-weight: bold;
+}
+/*FIM DO HOME*/
+
+/*COMEÇO CONTATO*/
+
+.conteiner-form{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+section p{
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+}
+
+form{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 2%;
+  align-content: center;
+}
+
+form label{
+  font-size: 1.5rem;
+}
+
+form input{
+  width: 100%;
+  height: 2rem;
+  margin: 2px;
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0.295); 
+}
+
+.form-control{
+  width: 100%;
+}
+
+form textarea{
+  width: 50%;
+  margin-top: 2%;
+  resize: none;
+}
+
+form button{
+  width: 20%;
+  height: 2rem;
+  margin-top: 1%;
+  background-color: darkblue;
+  color: #fff;
+  border-radius: 4px;
+  transition: .5s;
+}
+
+form button:hover{
+  background-color: gold;
+  color: #fff;
+  transition: .5s;
+}
+
+aside{
+  width: 50%;
+  justify-content: center;
+}
+
+aside img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  resize: none;
+  position: relative;
   
-  h2 {
-    font-size: 47px;
-    font-weight: bold;
-  }
+  left: -500;
+  border: 2px solid #151515;
+}
+
