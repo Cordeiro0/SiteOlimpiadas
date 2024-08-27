@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/pari.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-custom {
+            padding-top: 18vh;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .image-text-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-text-container img {
+            width: 100%;
+            max-width: 40%;
+            height: auto;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 2%;
+        }
+
+        .text-content {
+            max-width: 55%;
+            flex-grow: 1;
+            text-align: justify;
+        }
+
+        .image-text-container.full-width img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-container img {
+                max-width: 99%;
+                margin-right: 0;
+                margin-left: 0;
+                margin-bottom: 15px;
+            }
+
+            .text-content {
+                max-width: 99%;
+            }
+
+            .container-custom {
+              padding-top: 18vh;
+            }
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="img/paris.png" width="10%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="medalhas.html">Quadro de Medalhas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="modalidades.html">Vôlei de Praia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container-custom">
+        
+        <div class="image-text-container">
+            <div class="text-content">
+                <p>
+                  As Olimpíadas são reconhecidas como o maior evento esportivo do mundo, reunindo nações de todos os continentes para competir em diversas modalidades esportivas. Realizadas a cada quatro anos, as edições dos Jogos Olímpicos são divididas entre os Jogos de Verão e os de Inverno. Além disso, atletas com deficiência têm a oportunidade de competir nas Paralimpíadas, que refletem o espírito inclusivo do movimento olímpico.
+                </p>
+                <p>
+                  A promoção da paz, a integração entre as nações e a união dos povos são os pilares centrais dos Jogos Olímpicos, conforme estabelecido no Estatuto Olímpico. O principal objetivo é assegurar o desenvolvimento harmonioso da humanidade através da prática esportiva, promovendo valores como o respeito, a excelência e a amizade. Este evento transcende o âmbito esportivo, pois busca também fomentar a compreensão mútua e a cooperação internacional.
+                </p>
+            </div>
+            <img src="img/abert.jpg">
+        </div>
+
+        
+        <div class="image-text-container">
+            <img src="img/olimpiadas.jpg" >
+            <div class="text-content">
+                <p>
+                  Durante os jogos, era proclamada uma trégua que permitia que mensageiros percorressem diferentes regiões anunciando o evento, garantindo que pessoas de todo o território grego pudessem viajar até Olímpia em segurança. Porém, nem todos podiam participar ou assistir: mulheres, estrangeiros e escravos eram excluídos dos jogos, e às mulheres nem mesmo era permitido assistir às competições. Os vencedores recebiam uma coroa de oliveira, símbolo da supremacia moral e espiritual que os Jogos Olímpicos representavam na época.
+                </p>
+                <p>
+                  As Olimpíadas são reconhecidas como o maior evento esportivo do mundo, reunindo nações de todos os continentes para competir em diversas modalidades esportivas. Realizadas a cada quatro anos, as edições dos Jogos Olímpicos são divididas entre os Jogos de Verão e os de Inverno. Além disso, atletas com deficiência têm a oportunidade de competir nas Paralimpíadas, que refletem o espírito inclusivo do movimento olímpico.
+                </p>
+            </div>
+        </div> 
+        
+        <style>
+        .image-text-container.full-width{
+          margin-right: 5%;
+        }
+        </style>
+        <div class="image-text-container full-width">
+            <img id="rio" src="img/rio16.jpg">
+        </div> 
+        
+       
+        <div class="image-text-container">
+            <div class="text-content">
+                <p>
+                  As Olimpíadas na Antiguidade têm suas raízes por volta de 776 a.C., conforme apontam registros históricos. Contudo, o surgimento exato dos jogos é tema de debate entre os pesquisadores, não havendo consenso sobre um marco inicial específico. Esses jogos eram profundamente enraizados nos rituais religiosos da época, sendo uma forma dos gregos homenagearem Zeus, o rei dos deuses na mitologia grega. Realizados na cidade de Olímpia, localizada no sudoeste da Grécia, as competições ocorriam em momentos de trégua, visto que os conflitos entre as cidades-estado gregas eram frequentes.
+                </p>
+                <p>
+                  O fim das Olimpíadas na Antiguidade foi decretado pelo imperador romano Teodósio em 393 d.C., segundo registros oficiais, marcando o encerramento de uma era que havia perdurado por séculos.
+                </p>
+            </div>
+            <img src="img/antiga.webp">
+        </div> 
+        
+       
+        <div class="image-text-container">
+            <img src="img/sle.jpg">
+            <div class="text-content">    
+                <p>
+                  Já as Olimpíadas modernas surgiram graças à visão do pedagogo e esportista francês Barão Pierre de Coubertin. Inspirado pelas escavações arqueológicas em Olímpia entre 1875 e 1881 e pelo legado da civilização grega, Coubertin fundou o Comitê Olímpico Internacional (COI) em 1894, órgão que regulamenta os Jogos Olímpicos até hoje. A primeira edição dos Jogos Olímpicos modernos ocorreu em Atenas, em 1896, com a participação de 14 países e 241 atletas. As modalidades incluídas eram atletismo, ciclismo, esgrima, ginástica, halterofilismo, luta, natação e tênis.
+                </p>      
+                <p>
+                  Interessantemente, na primeira edição moderna, os vencedores recebiam medalhas de prata, enquanto os outros competidores eram premiados com medalhas de cobre e ramos de louro. A premiação com medalhas de ouro, prata e bronze como conhecemos hoje foi introduzida apenas em 1904. Desde então, os Jogos Olímpicos só deixaram de ser realizados em três ocasiões: em 1916, devido à Primeira Guerra Mundial, e em 1940 e 1944, por causa da Segunda Guerra Mundial.
+                </p>   
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Kayky e Victor 2024 © Todos os direitos reservados.
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIA

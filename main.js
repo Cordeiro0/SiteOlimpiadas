@@ -1,15 +1,17 @@
-var nome = document.getElementById('nome');
-var email = document.getElementById('email');
-var fone = document.getElementById('fone');
-
 function ValidarContato(){
-    if(nome.value === '' || email.value === '' || fone.value === ''){
-        alert('Preencha todos os campos');
-        erros = true;
-    }
-    else{
-        alert('Formulário enviado com sucesso');
-    }
+    nome = document.getElementsByName("ctt_nome");
+    email = document.getElementsByName("ctt_email");
+    fone = document.getElementsByName("ctt_telefone");
+    mensagem = document.getElementsByName("ctt_mensagem");
+
+   if(nome.value === "" || email.value === "" || fone.value === "" || mensagem.value === ""){
+        alert("Por favor, preencha todos os campos");
+        return false;
+   }
+   else{
+    alert("Mensagem enviado com sucesso!");
+    return true;
+   }
 }
 
 function Funcionando(){
