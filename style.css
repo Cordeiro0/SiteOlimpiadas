@@ -1,7 +1,7 @@
 /*INICIO HOME*/
-font-face {
+@font-face {
     font-family: 'Paris2024';
-    src: url('fonts/Paris2024-Variable.ttf') format('truetype');
+    src: url('Paris2024-Variable.ttf') format('truetype');
     font-weight: 100 900; /* Ajuste conforme necessário */
     font-style: normal; /* Ou 'italic' se a fonte incluir itálico */
 }
