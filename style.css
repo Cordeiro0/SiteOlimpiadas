@@ -1,4 +1,16 @@
 /*INICIO HOME*/
+@font-face {
+    font-family: 'Paris2024';
+    src: url('fonts/Paris2024-Variable.ttf') format('truetype');
+    font-weight: 100 900; /* Ajuste o intervalo de peso conforme necessário */
+    font-style: normal; /* Ou 'italic' se a fonte incluir itálico */
+}
+
+
+/* Aplicar a fonte ao corpo do documento */
+body {
+    font-family: 'NomeDaFonte', sans-serif;
+}
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.7) !important; 
