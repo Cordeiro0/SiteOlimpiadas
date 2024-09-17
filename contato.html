@@ -17,7 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto"> 
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -28,54 +28,65 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vôlei de Praia</a>
+              <a class="nav-link" href="#">Modalidades</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Atletas</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="contato.html">Contato</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <section><p>Envie-nos o que achou do site!</p></section>
       <div class="conteiner-form">
 
-        <form id="form">
-          
-            <label>Nome:</label>
-            <input type="text" id="nome" name="ctt_nome" alt="Input de nome">
-                    
-            <label>Email:</label>
-            <input type="email" id="email" name="ctt_email" alt="Input de email">
-          
-         
-            <label>Telefone:</label>
-            <input type="text" id="fone" name="ctt_telefone" alt="Input de telefone">
-         
+        <!--<img src="img/teste-image_contato.jpg" class="img-fluid" alt="imagem da torre eifel com as argolas das olímpiadas">
+      -->
 
-          <textarea name="" id="" cols="20px" rows="7px" ></textarea>
+        <form id="form">
+          <section>O que achou de nossso site?</section>
+          
+            <div class="input-contato">
+              <label>Nome:</label>
+              <input type="text" id="nome" name="ctt_nome" alt="Input de nome" required="required">
+            </div>
+                  
+            <div class="input-contato">  
+              <label>Email:</label>
+              <input type="email" id="email" class="input-contato" name="ctt_email" alt="Input de email" pattern="[a-z 0-9. %+-]+@[a-z 0-9.-]+\.[a-z]" required="required">
+            </div>
+
+            <div class="input-contato">
+              <label>Telefone:</label>
+              <input type="text" id="fone" class="input-contato" name="ctt_telefone" alt="Input de telefone" maxlength="10" pattern="[0-9]+$" required="required">
+            </div>
+
+            <div class="input-contato">
+              <label>Mensagem:</label>
+              <textarea name=""></textarea>
+            </div>
 
           <button type="submit" onclick="ValidarContato()">Enviar</button>
         </form>
 
-        <aside>
-          <div class="image-lateral">
-            <img src="img/image_contato.webp">
-          </div>
-        </aside>
-
+       
     </div>
     <!--Esse footer vai mudar-->
     <footer>
       <div class="footer">
-        Kayky Padella e Victor Cordeiro 2024 © Todos os direitos reservados.
+        <p>
+          Kayky Padella e Victor Cordeiro 2024 © Todos os direitos reservados.
+        </p>
        </div>
     </footer>
     
-
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

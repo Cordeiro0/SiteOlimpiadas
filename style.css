@@ -1,25 +1,7 @@
 /*INICIO HOME*/
-@font-face {
-    font-family: 'Paris2024';
-    src: url('Paris2024-Variable.ttf') format('truetype');
-    font-weight: 100 900; /* Ajuste conforme necessário */
-    font-style: normal; /* Ou 'italic' se a fonte incluir itálico */
-}
-
-/* Aplique a fonte a todos os elementos, se desejar */
-body {
-    font-family: 'Paris2024', sans-serif;
-}
-
-/* Ou aplique a fonte a elementos específicos */
-h1, h2 {
-    font-family: 'Paris2024', sans-serif;
-}
-
-
-/* Aplicar a fonte ao corpo do documento */
-body {
-    font-family: 'NomeDaFonte', sans-serif;
+*
+{
+ font-family: 'Paris 2024' sans-serif;   
 }
 
 .navbar {
@@ -35,6 +17,14 @@ body {
   transition: 0.8s;
 }
   
+
+
+.navbar-brand{
+  position: relative;
+  right: auto;
+  margin-right: 10px;
+}
+
 .navbar .nav-item {
   margin-right: 10px; 
 }
@@ -56,7 +46,7 @@ body {
   font-size: 32px; 
   font-family: 'Roboto', sans-serif; 
   font-weight: bold; 
-  color: #ffffff;
+  color: #0e0c0c;
 }
      
 .texto-carr {
@@ -70,20 +60,22 @@ h1 {
   font-size: 85px;
   font-weight: bold;
 }
-  
+
 h2 {
   font-size: 47px;
   font-weight: bold;
 }
+
+.footer{
+  background-color: #000000;
+  color: #fff;
+  padding: 7px;
+  text-align: center;
+}
+
 /*FIM DO HOME*/
 
 /*COMEÇO CONTATO*/
-
-.conteiner-form{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
 
 section p{
   font-size: 2rem;
@@ -91,66 +83,168 @@ section p{
   display: block;
 }
 
-form{
-  width: 40%;
+
+.conteiner-form{
+  height: 100vh;
+  width: auto;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 2%;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(img/background-image_contato.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-form label{
+form{
+  width: 40%;
+  height: 60%;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 99;
+  color: #fff;
+}
+
+form section{
   font-size: 1.5rem;
 }
 
-form input{
-  width: 100%;
-  height: 2rem;
-  margin: 2px;
-  border-radius: 2px;
-  border-color: rgba(0, 0, 0, 0.295); 
-}
-
-.form-control{
-  width: 100%;
-}
-
-form textarea{
-  width: 50%;
-  margin-top: 2%;
-  resize: none;
-}
-
-form button{
-  width: 20%;
-  height: 2rem;
-  margin-top: 1%;
-  background-color: darkblue;
-  color: #fff;
-  border-radius: 4px;
-  transition: .5s;
-}
-
-form button:hover{
-  background-color: gold;
-  color: #fff;
-  transition: .5s;
-}
-
-aside{
-  width: 50%;
-  justify-content: center;
-}
-
-aside img{
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  resize: none;
+.input-contato{
   position: relative;
-  
-  left: -500;
-  border: 2px solid #151515;
+  width: 100%;
+  height: 60px;
+  margin: 10px;
+  font-size: 1rem;
 }
 
+.input-contato label{
+  position: relative;
+  top: 0;
+  z-index: 99;
+  margin-bottom: 10%;
+}
+
+.input-contato textarea{
+  width: 100%;
+  margin-top: 10px;
+  resize: none;
+}
+
+#form button{
+  position: relative;
+  bottom: 0;
+  margin-bottom: 2%;
+}
+
+#form input{
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size:  1em;
+  color: #ffffff;
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+  margin-bottom: auto;
+  position: relative;
+  bottom: 0;
+}
+
+#form label{
+  position: absolute;
+  left: 5px;/*joga para a esquerda e da distanciamento de 5 pixels*/
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: #FFCF47;
+  font-weight: 500;
+  pointer-events: none;/*nao deixa o cursor do mouse ficar como se estivesse em cima de um texto*/
+  transition: .5s;
+  margin-bottom: auto;
+}
+
+.input-contato input:focus + label,
+.input-contato input:valid + label {
+  top: -5px;
+}
+
+.input-contato-textarea{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  margin-top: 10px;
+}
+
+.input-contato textarea{
+  margin-top: 3%;
+}
+
+#form button{
+  height: 50px;
+  width: 100%;
+  margin: 2%;
+  color: #FFF;
+  border: none;
+  background-color: blue;
+  border-radius: .5em;
+  transition: .5s;
+}
+
+#form button:hover{
+  background-color: gold;
+  color: #000000;
+  transition: .5s;
+}
+
+@media screen and (max-width: 375px){
+  #form{
+    width: 85%;
+  } 
+  section{
+    font-size: 6px
+  }
+  #form label{
+    font-size: 1rem
+  }
+  #form input{
+    font-size: small;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  #form{
+    width: 85%;
+  } 
+  section{
+    font-size: 1em
+  }
+  #form label{
+    font-size: 1rem
+  }
+  #form input{
+    font-size: medium;
+  }
+
+}
+
+@media screen and (max-width: 770px){
+  .navbar-toggler{
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+  }
+} 
