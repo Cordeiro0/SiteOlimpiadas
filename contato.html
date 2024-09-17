@@ -10,35 +10,36 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="img/paris.png" width="10%"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto"> 
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quadro de Medalhas
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Modalidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Atletas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="img/paris.png" width="10%"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quadro de Medalhas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Modalidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html"><button class="btn-login">Login</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
       <div class="conteiner-form">
 
@@ -49,23 +50,23 @@
           <section>O que achou de nossso site?</section>
           
             <div class="input-contato">
-              <label>Nome:</label>
               <input type="text" id="nome" name="ctt_nome" alt="Input de nome" required="required">
+              <label>Nome:</label>
             </div>
                   
             <div class="input-contato">  
-              <label>Email:</label>
               <input type="email" id="email" class="input-contato" name="ctt_email" alt="Input de email" pattern="[a-z 0-9. %+-]+@[a-z 0-9.-]+\.[a-z]" required="required">
+              <label>Email:</label>
             </div>
 
             <div class="input-contato">
-              <label>Telefone:</label>
               <input type="text" id="fone" class="input-contato" name="ctt_telefone" alt="Input de telefone" maxlength="10" pattern="[0-9]+$" required="required">
+              <label>Telefone:</label>
             </div>
 
             <div class="input-contato">
-              <label>Mensagem:</label>
-              <textarea name=""></textarea>
+              <label></label>
+              <textarea name="" placeholder="Digite aqui sua mensagem"></textarea>
             </div>
 
           <button type="submit" onclick="ValidarContato()">Enviar</button>
