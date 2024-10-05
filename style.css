@@ -1,11 +1,27 @@
 /*INICIO HOME*/
-*
-{
- font-family: 'Paris 2024' sans-serif;   
+@font-face {
+    font-family: 'Paris2024';
+    src: url('Paris2024-Variable.ttf') format('truetype');
+   
+}
+.nav-item {
+  font-family: 'Paris2024', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
 }
 
+
+h1, h2 {
+    font-family: 'Paris2024', sans-serif;
+}
+
+.carousel {
+  padding-top: 20px;
+}
+
+
 .navbar {
-  background-color: rgba(0, 0, 0, 0.7) !important; 
+  background-color: rgba(0, 0, 0, 0.9) !important; 
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -16,13 +32,7 @@
   font-size: 20px;
   transition: 0.8s;
 }
-
-.navbar-brand{
-  position: relative;
-  right: auto;
-  margin-right: 10px;
-}
-
+  
 .navbar .nav-item {
   margin-right: 10px; 
 }
@@ -44,7 +54,7 @@
   font-size: 32px; 
   font-family: 'Roboto', sans-serif; 
   font-weight: bold; 
-  color: #0e0c0c;
+  color: #ffffff;
 }
      
 .texto-carr {
@@ -58,22 +68,15 @@ h1 {
   font-size: 85px;
   font-weight: bold;
 }
-
+  
 h2 {
   font-size: 47px;
   font-weight: bold;
 }
-
-.footer{
-  background-color: #000000;
-  color: #fff;
-  padding: 7px;
-  text-align: center;
-}
-
 /*FIM DO HOME*/
 
 /*COMEÇO CONTATO*/
+
 
 section p{
   font-size: 2rem;
@@ -194,7 +197,7 @@ form section{
 
 #form button{
   height: 50px;
-  width: 100%;
+  width: 50%;
   margin: 2%;
   color: #FFF;
   border: none;
@@ -249,8 +252,209 @@ form section{
   }
 } 
 
-/*PARTE DO LOGIN*/
-.btn-login{
+
+/*CONTATO ACABA AQUI*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-custom {
+  padding-top: 18vh;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.image-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-text-container img {
+  width: 100%;
+  max-width: 40%;
+  height: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 2%;
+}
+
+.text-content {
+  max-width: 55%;
+  flex-grow: 1;
+  text-align: justify;
+}
+
+.image-text-container.full-width img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .image-text-container img {
+      max-width: 99%;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 15px;
+  }
+
+  .text-content {
+      max-width: 99%;
+  }
+
+  .container-custom {
+    padding-top: 18vh;
+  }
+}
+
+.footer2 {
+  background-color: #000000;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#titulx {
+  font-family: 'Paris2024', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.layout {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.l1 .textt, .l2 .textt, .l3 .textt {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.l1 .imagemm, .l2 .imagemm {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.l1 .imagemm img, .l2 .imagemm img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.l3 {
+    flex-direction: column;
+    text-align: left;
+    width: 100%; 
+  }
+
+  .l3 .textt {
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: left; 
+  
+  }
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .l1, .l2 {
+    flex-direction: column; 
+  }
+
+  .l1 .textt, .l2 .textt, .l1 .imagemm, .l2 .imagemm {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .l1 .textt, .l2 .textt {
+    order: 1; 
+  }
+
+  .l1 .imagemm, .l2 .imagemm {
+    order: 2; 
+  }
+
+  .l3 {
+    padding: 10px;
+  }
+}
+
+center {
+  padding-bottom: 8px;
+}
+
+.p2 {
+  font-size: 85px;
+}
+ /* tabelas */
+
+ .tiluto {
+
+  font-size: 70px;
+  font-family:'Paris2024', sans-serif ;
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+ }
+
+ td{
+  font-family:'Paris2024', sans-serif ;
+ }
+
+ th{
+  font-family:'Paris2024', sans-serif ;
+ }
+
+ /*TESTE DE MEDALHAS AQUI*/
+ .medals-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.medals-table th, .medals-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.medals-table th {
+  background-color: #eeea09;
+  color: white;
+}
+
+.medals-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#medals-body td{
+  text-align: center;
+}
+
+/*FIM DO TESTE PARA PAG MEDALHAS*/
+
+ /*PARTE LOGIN*/
+ .btn-login{
   height: 50px;
   width: 120px;
   background-color: transparent;

@@ -19,23 +19,27 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto"> 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="sobre.html">Sobre</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="medalhas.html">Quadro de Medalhas</a>
+                <a class="nav-link" href="medalhas.html">Quadro de Medalhas
+              </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item">
               <a class="nav-link" href="modalidades.html">Modalidades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contato.html">Contato</a>
             </li>
+            <li class="nav-item">
+              <a href="login.html"><button class="btn-login">Login</button></a>
+            </li>
           </ul>
         </div>
-    </nav>
+      </nav>
 
     <div class="container-custom">
         <div class="tiluto">Quadro de Medalhas - Paris 2024</div> <br>
@@ -45,7 +49,6 @@
         <table class="table table-bordered table-striped">
             <thead class="table-header">
                 <tr>
-
                     <th class="text-center">Posição</th>
                     <th class="text-center"></th>
                     <th class="text-center">País</th>
@@ -54,8 +57,14 @@
                     <th class="text-center"><img src="img/bronze.png" width="30" ></th>
                     <th class="text-center">Total</th>
                 </tr>
+                
+
             </thead>
-            
+            <tbody id="medals-body">
+
+            </tbody>
+
+            <!--
                 <tr>
                     <td class="text-center">1º</td>
                     <td class="text-center"><img src="img/pais/EUA.svg" width="50"></td>
@@ -156,6 +165,7 @@
                     <td class="text-center">20</td>
                 </tr>
             </td>
+            -->
         </table>
     </div>
    
