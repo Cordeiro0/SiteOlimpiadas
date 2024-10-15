@@ -33,10 +33,9 @@ function ValidarLogin(){
 
 async function carregarMedalhas(){
     try{
-         // Fazendo a requisição para a API
+         // extraindo a API do dono
          const response = await fetch('https://apis.codante.io/olympic-games/countries');
         
-         // Verificando se a resposta foi bem-sucedida
          if (!response.ok) {
              throw new Error('Erro ao carregar o arquivo JSON: ' + response.statusText);
          }
@@ -44,20 +43,18 @@ async function carregarMedalhas(){
          // Convertendo a resposta para JSON
          const data = await response.json();
  
-         // Seleciona o corpo da tabela onde os dados serão exibidos
          const tbody = document.getElementById('medals-body');
          if (!tbody) {
              throw new Error('Elemento com ID "medals-body" não encontrado.');
          }
          //tbody.innerHTML = ''; // Limpa o conteúdo existente
  
-         // Iterando sobre os resultados e criando as linhas da tabela
-         data.data.forEach(result => {  // Assuming data is the correct key from your API response
+         data.data.forEach(result => { 
              const row = document.createElement('tr');
              row.innerHTML = `
                  <td>${result.rank}</td>
-                 <td><img src="${result.flag_url}" width="20%" alt="${result.name}"></td>
-                 <td>${result.name} </td>
+                 <td><img src="${result.flag_url}" width="35%" alt="${result.name}"></td>
+                 <td>${result.name}</td>
                  <td>${result.gold_medals}</td>
                  <td>${result.silver_medals}</td>
                  <td>${result.bronze_medals}</td>
@@ -66,11 +63,63 @@ async function carregarMedalhas(){
              tbody.appendChild(row);
          });
 
-        
+     
     }//tenta carregar toda a página com tudo funcioando, se não gera um erro falando que não deu =) 
     catch(error){
         console.error("Erro ao carregar dados: " + error);
     }
 } 
 
-window.onload = carregarMedalhas;
+async function getAtletasMedalhistas() {
+    try {
+        const response = await fetch('https://apis.codante.io/olympic-games/events')
+        const ordersAtletas = await response.json()
+  
+      if (!response.ok) {
+        throw new Error('Erro ao carregar o arquivo JSON: ' + response.statusText)
+      }
+  
+      const tbody = document.getElementById('brasil-medals')
+      if (!tbody) {
+        throw new Error('Elemento com ID "brasil-medals" não foi encontrado caro amigo meu')
+      }
+  
+
+    console.log(ordersAtletas.data); // Log os dados
+
+    ordersAtletas.data.forEach(event => {
+        event.competitors.forEach(competitor => {
+            if(event.discipline_name === "Football"){
+                console.log(competitor)
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${competitor.competitor_name}</td>
+                    <td>${event.discipline_name}</td>
+                    <td>${competitor.result_mark}</td>
+                `;
+                tbody.appendChild(row);
+            }
+            
+
+        });
+    });
+  
+    } catch (error) {
+      console.error("Não foi possível encontrar os dados da table Brasil erro: " + error)
+    }
+  }
+
+/*Parte da API de Medalhas do Brasil*/
+
+window.onload = function CarregarTabelas(){
+    carregarMedalhas();
+    getAtletasMedalhistas();
+   
+    if(carregarMedalhas().Error){
+        console.log('algo deu errado no carregamento da table medalhas')
+    }
+    else if(getAtletasMedalhistas().Error){
+        console.log('algo deu errado no carregamento da table atletas')
+    }
+
+}

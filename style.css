@@ -98,9 +98,9 @@ section p{
 }
 
 form{
-  width: 40%;
+  width: auto;
   height: 60%;
-  padding: 20px;
+  padding: 7%;
   margin: 10px;
   border: 2px solid #000;
   display: flex;
@@ -229,9 +229,6 @@ form section{
 }
 
 @media screen and (max-width: 768px){
-  #form{
-    width: 85%;
-  } 
   section{
     font-size: 1em
   }
@@ -450,8 +447,33 @@ center {
 #medals-body td{
   text-align: center;
 }
-
 /*FIM DO TESTE PARA PAG MEDALHAS*/
+
+/*Medalhas do Brasil*/
+
+.table-brasil{
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.table-brasil th, .table-brasil td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table-brasil th {
+  background-color: #5fc11e;
+  color: rgb(0, 0, 0);
+}
+
+.table-brasil tr:nth-child(even) {
+  background-color: #9f4242;
+}
+/*FIM DO MEDALHAS DO BRASIL*/
 
  /*PARTE LOGIN*/
  .btn-login{
