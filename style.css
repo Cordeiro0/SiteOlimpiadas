@@ -613,3 +613,23 @@ input:valid + label {
 div.btn btn-secondary btn-lg active{
 margin-top: 0px;
 }
+
+
+.tiluto {
+  
+    margin-bottom: 20px;
+    font-size:65px;
+    font-family:'Paris2024', sans-serif ;
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+   }
+
+   iframe {
+    width: 100%;
+    height: auto;
+    max-width: 853px; 
+    aspect-ratio: 16 / 9; 
+    display: block;
+    margin: 0 auto; 
+}
