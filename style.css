@@ -403,15 +403,7 @@ center {
 }
  /* tabelas */
 
- .tiluto {
-
-  font-size: 70px;
-  font-family:'Paris2024', sans-serif ;
-  font-weight: 900;
-  color: #000000;
-  text-align: center;
- }
-
+ 
  td{
   font-family:'Paris2024', sans-serif ;
  }
