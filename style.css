@@ -633,3 +633,26 @@ margin-top: 0px;
     display: block;
     margin: 0 auto; 
 }
+
+/* Âncora */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  padding: 10px;
+  z-index: 1000; 
+  transition: background-color 0.5s; 
+  border-radius: 50%;
+}
+
+.scroll-to-top img {
+  width: 35px; 
+  height: 35px;
+}
+
+.scroll-to-top:hover {
+  background-color: #e8e8e8;
+  border-radius: 50%;
+
+}
