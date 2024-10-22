@@ -403,7 +403,15 @@ center {
 }
  /* tabelas */
 
- 
+ .tiluto {
+
+  font-size: 70px;
+  font-family:'Paris2024', sans-serif ;
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+ }
+
  td{
   font-family:'Paris2024', sans-serif ;
  }
@@ -413,6 +421,20 @@ center {
  }
 
  /*TESTE DE MEDALHAS AQUI*/
+
+#VictorLindo{
+  width: 100%;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+#VictorLindo iframe{
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 15%;
+}
+
  .medals-table {
   width: 100%;
   max-width: 800px;
@@ -506,7 +528,7 @@ center {
 .form-login {
   margin: 0 auto;
   display: grid;
-  padding: auto;
+  padding: 1%;
   background-color: transparent;
   backdrop-filter: blur(10px);
   color: #000;
@@ -539,7 +561,8 @@ label {
 
 input:focus + label,
 input:valid + label {
-  top: -5px;
+  top: 5px;
+  font-size: .85rem;
 }
 
 .inputbox input {
@@ -579,7 +602,7 @@ input:valid + label {
 }
 
 .forget a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
@@ -593,6 +616,8 @@ input:valid + label {
   height: 40px;
   border-radius: 40px;
   background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 50%;
   border: none;
   outline: none;
   cursor: pointer;
@@ -614,45 +639,197 @@ div.btn btn-secondary btn-lg active{
 margin-top: 0px;
 }
 
+/*PARTE DO CADASDTRO*/
+/*
+.conteiner-cad{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(img/background-image_cad.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.tiluto {
-  
-    margin-bottom: 20px;
-    font-size:65px;
-    font-family:'Paris2024', sans-serif ;
-    font-weight: 900;
-    color: #000000;
-    text-align: center;
-   }
+.form-cad {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5%;
+  margin: 0 auto;
+  border-radius: 24px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
 
-   iframe {
+.form-cad h2{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.inputbox-cad {
+  position: relative;
+  max-width: 310px;
+  border-bottom: 2px solid #ffffff;
+  margin: 1%;
+}
+
+.inputbox-cad label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.inputbox-cad input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: #ffffff;
+}
+
+.form-cad button {
+  position: relative;
+  bottom: 0px;
+}
+
+.btn-cad{
+  width: 50%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border: none;
+  top: 5%;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  margin: 20xpx auto 0;
+}
+
+.btn-cad:hover{
+  background-color: gold;
+}
+  */
+  .conteiner-cad {
+    height: 100vh;
     width: 100%;
-    height: auto;
-    max-width: 853px; 
-    aspect-ratio: 16 / 9; 
-    display: block;
-    margin: 0 auto; 
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/background-image_cad.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .form-cad {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+  
+  .form-cad h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .inputs-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .inputs-column {
+    width: 48%; /* Ajuste conforme necessário */
+  }
+  
+  .inputbox-cad {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .inputbox-cad input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .inputbox-cad label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #ffffff;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  .inputbox-cad input:focus + label,
+  .inputbox-cad input:valid + label {
+    top: -20px;
+    font-size: 12px;
+  }
+  
+  .btn-cad {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-cad:hover {
+    background-color: gold;
+  }
 
-/* Âncora */
+  .inputbox-cad-radio{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .inputs-column {
+      width: 100%;
+    }
+  }
 
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px; 
-  right: 20px; 
-  padding: 10px;
-  z-index: 1000; 
-  transition: background-color 0.5s; 
-  border-radius: 50%;
-}
-
-.scroll-to-top img {
-  width: 35px; 
-  height: 35px;
-}
-
-.scroll-to-top:hover {
-  background-color: #e8e8e8;
-  border-radius: 50%;
-
-}
+/*FIM DO CADASTRO*/ 
